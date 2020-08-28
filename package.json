@@ -25,10 +25,6 @@
       "target":["deb"],
       "category":"Utility",
       "icon":"build/icons/256x256.png"
-    },
-    "directories": {
-      "buildResources": "build",
-      "output": "release"
-  }
+    }
   }
 }
