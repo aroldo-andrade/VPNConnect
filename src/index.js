@@ -84,7 +84,7 @@ conectar.addEventListener('click', function (e) {
 function disconect(){
     console.log('vou desconectar')
     //ps -a -u root | grep -e 'openvpn' | cut -c 3-7
-    let ps = spawn(`ps`,[`-a -u root | grep -e 'openvpn' | cut -c 3-7 || echo '-1'`],{
+    let ps = spawn(`ps`,[`-a -u root | grep -e 'openvpn' | cut -c1-8 || echo '-1'`],{
         shell:true
     });
     ps.stdout.on('data', function (data) {
